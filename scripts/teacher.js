@@ -1,13 +1,16 @@
 var isTeacher = function(name) {
-  if (name === 'Dan' || name === 'Andrew') {
-    console.log('true');
-    return true;
-  }
-  else { 
-    console.log('false');
-    return false;
-  }
+  return (name === 'Dan' || name === 'Andrew');
 }
-//isTeacher('Dan');
-// isTeacher('Andrew');
-isTeacher('Dick');
+  
+//  var isTeacher = function(name) {
+//  if (name === 'Dan' || name === 'Andrew') {
+//    return true;
+//  }
+//  else { 
+//    return false;
+//  }
+//}
+//console.log(isTeacher('Dan'));
+// console.log(isTeacher('Andrew'));
+console.log(isTeacher('Dick'));
+
