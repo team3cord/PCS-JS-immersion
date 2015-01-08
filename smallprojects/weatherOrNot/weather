@@ -1,4 +1,21 @@
 #!/usr/bin/env node  
 
-console.log(process.argv);
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander');
+
+program
+  .version('0.0.1')
+  .option('-c, --cold', "it's cold")
+  .option('-s, --sunny', "it's sunny")
+  .option('-w, --wet [type]', 'Add the type of wetness [precipitation]')
+  .parse(process.argv);
+    
+console.log('The weather outside is:');
+if (program.cold) console.log(' - cold');
+if (program.sunny) console.log(' - sunny');
+if (program.wet) console.log("It's raining cats and  %s s!",program.wet);
+    
 

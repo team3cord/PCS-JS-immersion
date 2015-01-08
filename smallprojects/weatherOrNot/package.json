@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/team3cord/PCS-JS-immersion/issues"
   },
-  "homepage": "https://github.com/team3cord/PCS-JS-immersion"
+  "homepage": "https://github.com/team3cord/PCS-JS-immersion",
+  "dependencies": {
+    "commander": "^2.6.0"
+  }
 }
