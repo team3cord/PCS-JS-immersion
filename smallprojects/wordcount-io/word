@@ -1,0 +1,16 @@
+#!/usr/bin/env node  
+var shell = require('commander');
+var fs = require('fs');
+
+//shell
+ // .version('0.0.3')
+ // .option('-v, --verbose', 'Be moce verbose, report timing information')
+ // .option('-n, --number','Report just the number of words')
+function countWords(str) {
+  return str.split(/\s+/).length;
+}
+fs.readFile('./textfileone.txt', { encoding: 'utf8' }, function (err, content){
+  console.log(countWords(content));
+});
+
+
