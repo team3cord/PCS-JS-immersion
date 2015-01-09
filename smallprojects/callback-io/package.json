@@ -1,0 +1,27 @@
+{
+  "name": "callback-io",
+  "version": "1.0.0",
+  "description": "Learning i/o and callbacks.",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "`npm bin`/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:team3cord/PCS-JS-immersion.git"
+  },
+  "keywords": [
+    "node",
+    "jasmine"
+  ],
+  "author": "Matt C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team3cord/PCS-JS-immersion/issues"
+  },
+  "homepage": "https://github.com/team3cord/PCS-JS-immersion"
+}
