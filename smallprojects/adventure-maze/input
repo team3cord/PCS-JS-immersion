@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var readline = require('readline');
+
+var rl = readline.createInterface({
+  input : process.stdin,
+  output : process.stdout
+});
+
+
+rl.question("Please enter a positive integer : ", function(answerOne){
+    var firstTerm = answerOne;
+    function sumOf(term1, term2){
+      var answer = (parseInt(term1)) + (parseInt(term2)); 
+      return answer;
+    }
+    console.log(firstTerm);
+    console.log('next question');
+    rl.question("Please enter another postive integer : ", function(answerTwo){
+      var secondTerm = answerTwo;
+      console.log(sumOf(answerOne, answerTwo)+ ' is the sum of those integers.');
+      rl.close();
+    });
+      
+
+});

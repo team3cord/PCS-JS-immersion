@@ -1,6 +1,5 @@
 #!/usr/bin/env node  
 var shell = require('commander');
-var fs = require('fs');
 var inCommon = require('./inCommon');
 var returnFiles = require('./readfiles');
 
