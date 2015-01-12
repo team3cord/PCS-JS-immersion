@@ -2,7 +2,7 @@
 var shell = require('commander');
 var fs = require('fs');
 var inCommon = require('./inCommon');
-
+var returnFiles = require('./readfiles');
 
 
 shell
@@ -15,7 +15,8 @@ shell
 var arrr = shell.args;
 if(shell.number) console.log('n words in common.');
 if(shell.verbose) console.log('[time] read the files: ms', '[time] word comparison: ms');
-inCommon.toCompare('abc def ghi jkl mno', 'none abc of mno the see');
+returnFiles.readFiles(arrr[0], arrr[1]);
+//inCommon.toCompare(arrr[0], arrr[1]);
 
 
  /*
