@@ -1,0 +1,8 @@
+#! /usr/bin/env node  
+var inputFilePath = process.argv;
+console.log(inputFilePath[2]);
+var msg = require('./' + inputFilePath[2]);
+
+var output = (msg.fileMessage.message);
+
+console.log(output);
