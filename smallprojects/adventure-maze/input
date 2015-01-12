@@ -9,18 +9,28 @@ var rl = readline.createInterface({
 
 
 rl.question("Please enter a positive integer : ", function(answerOne){
-    var firstTerm = answerOne;
+    var firstTerm = parseInt(answerOne);
     function sumOf(term1, term2){
-      var answer = (parseInt(term1)) + (parseInt(term2)); 
+      var answer = (term1 + term2); 
       return answer;
     }
-    console.log(firstTerm);
-    console.log('next question');
-    rl.question("Please enter another postive integer : ", function(answerTwo){
-      var secondTerm = answerTwo;
-      console.log(sumOf(answerOne, answerTwo)+ ' is the sum of those integers.');
+    if(typeof firstTerm !== 'number'){
+      console.log("That is not an integer.");
       rl.close();
-    });
+    } else {
+      console.log(typeof firstTerm);
+      console.log('next question');
+      rl.question("Please enter another postive integer : ", function(answerTwo){
+        var secondTerm = parseInt(answerTwo);
+        if(typeof firstTerm !== 'number'){
+          console.log("That is not an integer.");
+          rl.close();
+        } else {
+          console.log(sumOf(firstTerm, secondTerm) + ' is the sum of those integers.');
+          rl.close();
+        }
+      });
+    }
       
 
 });
