@@ -1,0 +1,23 @@
+{
+  "name": "adventure-maze",
+  "version": "1.0.0",
+  "description": "Daily challenge: create a maze text adventure game.",
+  "main": "`npm bin` /jasmine",
+  "scripts": {
+    "test": "testmaze"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/team3cord"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "npm"
+  ],
+  "author": "Matt C",
+  "license": "ISC",
+  "dependencies": {
+    "jsi-gamelib": "git+ssh://git@github.com:portlandcodeschool/jsi-gamelib.git"
+  }
+}
