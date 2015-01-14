@@ -21,16 +21,16 @@ initTwo();
 */
 
 
-function counter(){
-  var num = 0;
+function counter(arg){
+  var num = arg;
    function sequence(){
      num++;
       console.log(num );
    }
    return sequence; 
 }
-var sequence1 = counter();
-var sequence2 = counter();
+var sequence1 = counter(5);
+var sequence2 = counter(13);
 sequence1(); 
 sequence1(); 
 sequence1(); 
