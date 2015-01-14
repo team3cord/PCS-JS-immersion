@@ -20,12 +20,23 @@ function initTwo() {
 initTwo();
 */
 
-var num = 0;
-function sequence(){
-  num ++;
-    console.log(num);
+
+function counter(){
+  var num = 0;
+   function sequence(){
+     num++;
+      console.log(num );
+   }
+   return sequence; 
 }
-sequence();
-sequence();
-sequence();
-sequence();
+var sequence1 = counter();
+var sequence2 = counter();
+sequence1(); 
+sequence1(); 
+sequence1(); 
+sequence1(); 
+sequence1(); 
+sequence2(); 
+sequence2(); 
+sequence2(); 
+
