@@ -19,5 +19,10 @@ exports.msgLogMove = function(arg){
   console.log('You have chosen to move to the ' + arg +'.');
   console.log('');
 };
+exports.msgPlayAgain= function(){
+  console.log('');
+  console.log('That was so much fun. Let\'s play again. =D ');
+  console.log('');
+};
 
 

@@ -10,6 +10,18 @@ console.log('');
 console.log('');
 console.log('Come and test your wits against the AMAZING MAZE!');
 
+// WHY DOESN'T THIS WORK!!! 
+var key = 1;
+var value = 'north';
+var obj = jsonMap[1];
+console.log((gameMap.rooms[key].value)); // undefined  
+console.log(jsonMap[1].value);  // undefined  
+console.log(jsonMap[key].north); //  E 
+console.log(obj[value]); // E
+
+// WHY DOESN'T THIS WORK!!! 
+
+
 // START FUNCTION  
 playerStatus('B');
 
@@ -25,7 +37,8 @@ function evalOptions(room){
   roomsArray.forEach(function(el,ind,ra){
      if((roomsArray[ind].treasure) && (roomsArray[ind].name === room)){
       getMessage.msgWinner(room);
-      process.exit();
+      getMessage.msgPlayAgain();
+      playerStatus('B');
      }
   });
   promptMove(room);
@@ -45,16 +58,16 @@ function evalAndMove(nextRoom, room){
       checkMove('north', nextRoom , room);
       break;
     case 'S':
-      //checkMove('south', nextRoom , room);
+      checkMove('south', nextRoom , room);
       break;
     case 'E':
-      //checkMove('east', nextRoom , room);
+      checkMove('east', nextRoom , room);
       break;
     case 'W':
-      //checkMove('west', nextRoom , room);
+      checkMove('west', nextRoom , room);
       break;
     default:  
-      console.log('bitchtits!');
+      console.log(room);
   }
 
 }
@@ -74,36 +87,13 @@ function returnMaze(){
 }
 function checkMove(direction, nextRoom , room){
   var anotherRoomsArray = gameMap.rooms;
- // console.log(direction + nextRoom + room);
-   // console.log(anotherRoomsArray[3].south);
   anotherRoomsArray.forEach(function(el,ind,ra){
-    var condOne = anotherRoomsArray[ind].name;
-    var condTwo = direction;
-    var tryl = anotherRoomsArray[ind].condTwo;
-    function returnResult(ind, dir, tryl){
-      console.log(ind); 
-      console.log(dir); 
-      console.log(tryl);
+    var arrayObj = anotherRoomsArray[ind];
 
-
-    }
-    returnResult(ind, direction, tryl);
-        //var testRoom = anotherRoomsArray[ind].south;
-    if(((anotherRoomsArray[ind].name) === room) && ((anotherRoomsArray[ind].condTwo) !== null)) {
-//    console.log(condOne);
-   console.log('new: '+ direction + ind);
-  //    console.log(el);
- //      console.log(ind);
-//        console.log(ra); 
+    if(((arrayObj["name"]) === room) && ((arrayObj[direction]) !== null)) {
         console.log('both true');
-        var newShit = (jsonMap[ind]);
-        console.log(newShit.direction); 
-        //returnResult(ind, condTwo);
-        //playerStatus((jsonMap[ind].direction));
-      
-    }
-    else{var element = el; 
-      //console.log(direction + ',' + element);
+        playerStatus(arrayObj[direction]);
+        
     }
   });
 }
