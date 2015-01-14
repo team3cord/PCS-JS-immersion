@@ -1,11 +1,23 @@
 // message.js
 
-exports.message = function(roomObj){
-  console.log(roomObj);
-  // number of doors  
-  // direction of doors  
-  // prompt
-  // callback
+exports.msgCurrentRoom = function(arg){
+  console.log('');
+  console.log('You are here in the ' + arg +' room.');
+  console.log('');
+};
+
+exports.msgWinner = function(arg){
+  console.log('');
+  console.log('Congratulations! In room ' + arg +' is our amazing treasure. \n It is your very own lama. \n Thank you so much for playing the AMAZING MAZE!!!!');
+  console.log('');
+};
+exports.msgWhichDirection = function(){
+  console.log('Which direction do you choose to move? (N, S, E or W)');
+};
+exports.msgLogMove = function(arg){
+  console.log('');
+  console.log('You have chosen to move to the ' + arg +'.');
+  console.log('');
 };
 
 

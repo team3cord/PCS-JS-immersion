@@ -5,7 +5,108 @@ var gameMap = require('./game.json');
 var getLocation = require('./location');
 var getMessage = require('./message');
 
-getLocation.currentRoom('A');
+var jsonMap = gameMap.rooms;
+console.log('');
+console.log('');
+console.log('Come and test your wits against the AMAZING MAZE!');
 
-//prompt
-//console.log(require('jsi-gamelib').map(require('./' + process.argv[2])));
+// START FUNCTION  
+playerStatus('B');
+
+// MAIN EVAL AND MOVEMENT functions  
+function playerStatus(room){
+returnMaze();
+getMessage.msgCurrentRoom(room);
+evalOptions(room);
+}
+function evalOptions(room){
+//console.log(gameMap.rooms);
+  var roomsArray = gameMap.rooms;
+  roomsArray.forEach(function(el,ind,ra){
+     if((roomsArray[ind].treasure) && (roomsArray[ind].name === room)){
+      getMessage.msgWinner(room);
+      process.exit();
+     }
+  });
+  promptMove(room);
+}
+function promptMove(room){
+  prompt.start();
+  getMessage.msgWhichDirection(); 
+  prompt.get(['direction'], function (err, result){
+    getMessage.msgLogMove(result.direction);
+    evalAndMove(result.direction, room);
+  });
+}
+function evalAndMove(nextRoom, room){
+  console.log(nextRoom + '  ' + room);
+  switch(nextRoom){
+    case 'N':
+      checkMove('north', nextRoom , room);
+      break;
+    case 'S':
+      //checkMove('south', nextRoom , room);
+      break;
+    case 'E':
+      //checkMove('east', nextRoom , room);
+      break;
+    case 'W':
+      //checkMove('west', nextRoom , room);
+      break;
+    default:  
+      console.log('bitchtits!');
+  }
+
+}
+function denyAndReprompt(room){
+
+}
+
+
+// HELPER functions  
+
+function returnMaze(){
+  console.log('');
+  console.log('');
+  console.log(jsiGame.map(gameMap));
+  console.log('');
+  console.log('');
+}
+function checkMove(direction, nextRoom , room){
+  var anotherRoomsArray = gameMap.rooms;
+ // console.log(direction + nextRoom + room);
+   // console.log(anotherRoomsArray[3].south);
+  anotherRoomsArray.forEach(function(el,ind,ra){
+    var condOne = anotherRoomsArray[ind].name;
+    var condTwo = direction;
+    var tryl = anotherRoomsArray[ind].condTwo;
+    function returnResult(ind, dir, tryl){
+      console.log(ind); 
+      console.log(dir); 
+      console.log(tryl);
+
+
+    }
+    returnResult(ind, direction, tryl);
+        //var testRoom = anotherRoomsArray[ind].south;
+    if(((anotherRoomsArray[ind].name) === room) && ((anotherRoomsArray[ind].condTwo) !== null)) {
+//    console.log(condOne);
+   console.log('new: '+ direction + ind);
+  //    console.log(el);
+ //      console.log(ind);
+//        console.log(ra); 
+        console.log('both true');
+        var newShit = (jsonMap[ind]);
+        console.log(newShit.direction); 
+        //returnResult(ind, condTwo);
+        //playerStatus((jsonMap[ind].direction));
+      
+    }
+    else{var element = el; 
+      //console.log(direction + ',' + element);
+    }
+  });
+}
+
+
+
