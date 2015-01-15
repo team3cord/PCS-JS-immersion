@@ -17,6 +17,7 @@ var value = 'north';
 * 'use strict';  => Strict mode can be declared on a per file basis or a per function basis or in the node interpreter by node --use_strict => as a node executable use #! /usr/bin/env/ node --use_strict  
 
 ---  
+* Closure => when a variable is accessed from outside the functions  (using a global var always creates a closure variable hoisting)
 
 * Closure/Scope =>  returning a function that is declared in another scope =>  
 > function counter(){  
@@ -47,7 +48,16 @@ var value = 'north';
 
 ---  
 
-* ?  
+### JavaScript multi-paradigm  
+
+  * First-class function => supports passing functions as arguments to other functions, returning them as values from other functions, assigning them to variables || storing
+
+    * Functional  => 
+    * Imperative  =>  
+    * Procedural  =>  
+    * Object Oriented  =>  
+
+---  
 
 
                                         
