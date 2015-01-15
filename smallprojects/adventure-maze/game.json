@@ -90,7 +90,7 @@
           "north": null,
           "east": "L",
           "south": null,
-          "west": null
+          "west": "N"
         },
         {
           "name": "N",

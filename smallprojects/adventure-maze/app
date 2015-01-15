@@ -10,17 +10,6 @@ console.log('');
 console.log('');
 console.log('Come and test your wits against the AMAZING MAZE!');
 
-// WHY DOESN'T THIS WORK!!! 
-var key = 1;
-var value = 'north';
-var obj = jsonMap[1];
-console.log((gameMap.rooms[key].value)); // undefined  
-console.log(jsonMap[1].value);  // undefined  
-console.log(jsonMap[key].north); //  E 
-console.log(obj[value]); // E
-
-// WHY DOESN'T THIS WORK!!! 
-
 
 // START FUNCTION  
 playerStatus('B');
@@ -32,16 +21,19 @@ getMessage.msgCurrentRoom(room);
 evalOptions(room);
 }
 function evalOptions(room){
-//console.log(gameMap.rooms);
   var roomsArray = gameMap.rooms;
+  var breakPrompt = false;
   roomsArray.forEach(function(el,ind,ra){
      if((roomsArray[ind].treasure) && (roomsArray[ind].name === room)){
       getMessage.msgWinner(room);
       getMessage.msgPlayAgain();
+      breakPrompt = true;
       playerStatus('B');
      }
   });
-  promptMove(room);
+  if(breakPrompt !== true){
+    promptMove(room);
+  }
 }
 function promptMove(room){
   prompt.start();
@@ -52,7 +44,6 @@ function promptMove(room){
   });
 }
 function evalAndMove(nextRoom, room){
-  console.log(nextRoom + '  ' + room);
   switch(nextRoom){
     case 'N':
       checkMove('north', nextRoom , room);
@@ -67,12 +58,13 @@ function evalAndMove(nextRoom, room){
       checkMove('west', nextRoom , room);
       break;
     default:  
-      console.log(room);
+      denyAndReprompt(room);
   }
 
 }
 function denyAndReprompt(room){
-
+  getMessage.msgInvalid();
+  playerStatus(room);
 }
 
 
@@ -91,7 +83,6 @@ function checkMove(direction, nextRoom , room){
     var arrayObj = anotherRoomsArray[ind];
 
     if(((arrayObj["name"]) === room) && ((arrayObj[direction]) !== null)) {
-        console.log('both true');
         playerStatus(arrayObj[direction]);
         
     }

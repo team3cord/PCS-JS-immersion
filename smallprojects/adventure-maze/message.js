@@ -7,8 +7,14 @@ exports.msgCurrentRoom = function(arg){
 };
 
 exports.msgWinner = function(arg){
+  console.log('#################################################');
+  console.log('#################################################');
+  console.log('#################################################');
   console.log('');
   console.log('Congratulations! In room ' + arg +' is our amazing treasure. \n It is your very own lama. \n Thank you so much for playing the AMAZING MAZE!!!!');
+  console.log('#################################################');
+  console.log('#################################################');
+  console.log('#################################################');
   console.log('');
 };
 exports.msgWhichDirection = function(){
@@ -23,6 +29,14 @@ exports.msgPlayAgain= function(){
   console.log('');
   console.log('That was so much fun. Let\'s play again. =D ');
   console.log('');
+};
+exports.msgInvalid= function(){
+  console.log('#################################################');
+  console.log('#################################################');
+  console.log("That is not a valid choice.");
+  console.log("Please try again.");
+  console.log('#################################################');
+  console.log('#################################################');
 };
 
 
