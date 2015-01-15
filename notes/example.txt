@@ -1,0 +1,60 @@
+if &cp | set nocp | endif
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <Nul> 
+inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
+inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
+inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
+inoremap <silent> <expr> <Plug>delimitMateS-BS delimitMate#WithinEmptyPair() ? "\<Del>" : "\<S-BS>"
+inoremap <silent> <Plug>delimitMateBS =delimitMate#BS()
+map! <D-v> *
+snoremap <silent> 	 i<Right>=TriggerSnippet()
+snoremap  b<BS>
+snoremap % b<BS>%
+snoremap ' b<BS>'
+snoremap U b<BS>U
+nnoremap \d :YcmShowDetailedDiagnostic
+snoremap \ b<BS>\
+snoremap ^ b<BS>^
+snoremap ` b<BS>`
+vmap gx <Plug>NetrwBrowseXVis
+nmap gx <Plug>NetrwBrowseX
+snoremap <Left> bi
+snoremap <Right> a
+snoremap <BS> b<BS>
+snoremap <silent> <S-Tab> i<Right>=BackwardsSnippet()
+vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
+nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())
+xmap <BS> "-d
+vmap <D-x> "*d
+vmap <D-c> "*y
+vmap <D-v> "-d"*P
+nmap <D-v> "*P
+inoremap <expr> 	 pumvisible() ? "\" : "\	"
+inoremap <silent> 	 =ShowAvailableSnips()
+let &cpo=s:cpo_save
+unlet s:cpo_save
+set autoindent
+set background=dark
+set backspace=indent,eol,start
+set completefunc=youcompleteme#Complete
+set completeopt=preview,menuone
+set cpoptions=aAceFsB
+set expandtab
+set fileencodings=ucs-bom,utf-8,default,latin1
+set gdefault
+set helplang=en
+set ignorecase
+set incsearch
+set runtimepath=~/.vim,~/.vim/bundle/Vundle.vim,~/.vim/bundle/YouCompleteMe,~/.vim/bundle/tern_for_vim,~/.vim/bundle/vim-fugitive,~/.vim/bundle/vim-javascript-syntax,~/.vim/bundle/delimitMate,~/.vim/bundle/syntastic,~/.vim/bundle/grb256,~/.vim/bundle/nerdtree,~/.vim/bundle/snipmate,/usr/local/share/vim/vimfiles,/usr/local/share/vim/vim74,/usr/local/share/vim/vimfiles/after,~/.vim/after,~/bin/dotfiles/.vim/bundle/Vundle.vim,~/.vim/bundle/Vundle.vim/after,~/.vim/bundle/YouCompleteMe/after,~/.vim/bundle/tern_for_vim/after,~/.vim/bundle/vim-fugitive/after,~/.vim/bundle/vim-javascript-syntax/after,~/.vim/bundle/delimitMate/after,~/.vim/bundle/syntastic/after,~/.vim/bundle/grb256/after,~/.vim/bundle/nerdtree/after,~/.vim/bundle/snipmate/after
+set scrolloff=6
+set shiftwidth=2
+set shortmess=filnxtToOc
+set showmatch
+set smartcase
+set softtabstop=2
+set noswapfile
+set tabstop=2
+set updatetime=2000
+set visualbell
+" vim: set ft=vim :
