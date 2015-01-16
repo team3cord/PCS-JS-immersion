@@ -22,9 +22,9 @@ console.log(obj1.name);
 obj1 = {
   filetype: "ex"
 };
-console.log(obj1.filetype);
-console.log(obj2.filetype);
-console.log(obj2.name);
+console.log(obj1.filetype); // ex
+console.log(obj2.filetype); //undefined 
+console.log(obj2.name); 
 // Prototype Chain  
 
 var parent = {

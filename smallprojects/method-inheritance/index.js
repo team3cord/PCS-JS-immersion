@@ -23,3 +23,4 @@ flatten = function(array){
 
 module.exports.indexMethod = indexMethod;
 module.exports.flatten = flatten;
+
