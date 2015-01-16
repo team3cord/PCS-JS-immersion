@@ -1,0 +1,23 @@
+{
+  "name": "method-inheritance",
+  "version": "0.0.1",
+  "description": "concepts: methods are functions of an object => show how inheritance allows using methods of parent object",
+  "main": "index.js",
+  "scripts": {
+    "test": "`npm bin`/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github/team3cord/pcs-js-immersion.git"
+  },
+  "keywords": [
+    "node",
+    "jasmine",
+    "javascript"
+  ],
+  "author": "Matt C",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^2.1.1"
+  }
+}
