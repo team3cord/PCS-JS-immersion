@@ -3,7 +3,7 @@
 [![Portland Code School logo](assets/pcs-logo.png)](http://www.portlandcodeschool.com)  
 
 This is the repository for my notes and practice scripts for the PCS coding boot camp.  
-It will include all my non project scripts and notes. There will also be a section on the effectevness of the curriculum and teaching method.  
+It will include all my non project scripts and notes. There will also be a section on the effectiveness of the curriculum and teaching method.  
 
 ---  
 
