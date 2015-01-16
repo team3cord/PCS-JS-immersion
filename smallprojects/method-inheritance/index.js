@@ -7,5 +7,19 @@
 indexMethod = function(arg){
   return arg + '!';
 };
-console.log(indexMethod('weiner'));
+flatten = function(array){
+
+  var flatArray = [];
+  array.forEach(function callback(value,index,array){
+   if(!Array.isArray(value)){
+      flatArray.push(value);
+   }  
+    else {
+      flatArray = flatArray.concat(flatten(value));
+    }
+  });
+  return flatArray;
+};
+
 module.exports.indexMethod = indexMethod;
+module.exports.flatten = flatten;
