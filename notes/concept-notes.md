@@ -18,6 +18,8 @@ var value = 'north';
 
 ---  
 * Closure => when a variable is accessed from outside the functions  (using a global var always creates a closure variable hoisting)
+* Closures allow you to pass a variable or a function to a different scope and reference the original scope of the passed item.  
+* 
 
 * Closure/Scope =>  returning a function that is declared in another scope =>  
 > function counter(){  
@@ -55,7 +57,7 @@ var value = 'north';
     * Functional  => 
     * Imperative  =>  
     * Procedural  =>  
-    * Object Oriented  =>  
+    * Object Oriented  =>   
 
 ---  
 
