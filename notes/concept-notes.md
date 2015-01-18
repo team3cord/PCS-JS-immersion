@@ -17,10 +17,12 @@ var value = 'north';
 * 'use strict';  => Strict mode can be declared on a per file basis or a per function basis or in the node interpreter by node --use_strict => as a node executable use #! /usr/bin/env/ node --use_strict  
 
 ---  
+
+* $$$ Closure is a special kind of object that combines: a function & the environment in which that function was created.  The environment consists of any local variables that were in scope at the time that closure was created.$$$  
+* $$$ You can use a closure anywher you might normally use an object with only a single method. $$$  
 * Closure => when a variable is accessed from outside the functions  (using a global var always creates a closure variable hoisting)
 * Closures allow you to pass a variable or a function to a different scope and reference the original scope of the passed item.  
 * 
-
 * Closure/Scope =>  returning a function that is declared in another scope =>  
 > function counter(){  
 >   console.log('why?');  
