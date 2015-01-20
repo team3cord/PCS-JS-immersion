@@ -11,7 +11,17 @@ var value = 'north';
 
 * // WHY DOESN'T THIS WORK!!! 
 
---- 
+# Variable hoisting  
+
+  * In a function the LHS look up creates the variable in the function scope but does not assign a value to it till after the code parses to that line.(var hoistingcreates an undefined var first then goes through the lines of code and assigns it)// hoist.js  
+
+> function example(){  
+> console.log(a); // undefined  
+> var a = 1;  
+> console.log(a); // 1   
+> }  
+  
+---  
 
 * Dot notation can't accept a variable. You have to use the []notation.  
 * 'use strict';  => Strict mode can be declared on a per file basis or a per function basis or in the node interpreter by node --use_strict => as a node executable use #! /usr/bin/env/ node --use_strict  
