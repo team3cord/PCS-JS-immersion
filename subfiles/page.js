@@ -14,7 +14,8 @@
     articleOne[0].insertBefore(postOneTitle, fistPostPara[0]);
     //postOneTitle.innerHTML = "My First Blog Post";
     postOneTitle.textContent = "My First Blog Post";
-    
+
+ // CHALLENGE 2      
   
     var parentElement = articleOne[0].parentNode;
     var  newArticle = document.createElement('article');
