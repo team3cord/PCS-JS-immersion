@@ -1,7 +1,7 @@
 (function() {
   // CHALLENGE 3 
+  // Do we need to or can we validate the select field???  
     document.forms.login.onsubmit = function(){
-     // window.alert('We stopped it.');
       var inputArray = document.getElementsByTagName('input');
       var emailRegex = /.+@.+\..+/ ;
       var ccRegex = /^[34][0-9]{9,15}$/ ; 
@@ -38,6 +38,7 @@
           inputArray[4].focus();
           return false;
       }
+      window.alert(inputArray[]
       window.alert("You win!" );
      return false;
     };
