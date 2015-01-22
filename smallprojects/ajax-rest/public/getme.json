@@ -1,0 +1,19 @@
+{
+  "name": "jsi-gamelib",
+  "version": "0.1.0",
+  "description": "Game library for JavaScript course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wbyoung/jsi-gamelib.git"
+  },
+  "author": "Whitney Young",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wbyoung/jsi-gamelib/issues"
+  },
+  "homepage": "https://github.com/wbyoung/jsi-gamelib"
+}
