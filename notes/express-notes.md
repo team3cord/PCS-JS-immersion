@@ -28,6 +28,8 @@
 
     * how to include handlebars instead of relying on jade??  
     * customizing the scaffolding/ generator???  without jade??  
+    * what is and how do you incorporate middleware  
+    * what is the most common express set up  
     * 
 
 ---      
