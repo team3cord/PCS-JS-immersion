@@ -6,7 +6,8 @@
   * 
 
 ### Postgresql  
-
+  
+  * createdb name;  then psql name: go to connect to db.  
   * \d [arg]; => describes the arg table, no arg describes all tables  
   * SELECT * FROM table; => shows columns and rows from table.  
   * 
