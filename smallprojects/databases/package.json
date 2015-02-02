@@ -1,0 +1,29 @@
+{
+  "name": "databases",
+  "version": "0.0.1",
+  "description": "Postgresql challenges",
+  "main": "app.js",
+  "scripts": {
+    "test": "`npm bin` /jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/team3cord/PCS-JS-immersion.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Postgresql"
+  ],
+  "author": "Matt Cordeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team3cord/PCS-JS-immersion/issues"
+  },
+  "homepage": "https://github.com/team3cord/PCS-JS-immersion",
+  "dependencies": {
+    "bluebird": "^2.9.6",
+    "bookshelf": "^0.7.9",
+    "knex": "^0.7.3",
+    "pg": "^4.2.0"
+  }
+}
