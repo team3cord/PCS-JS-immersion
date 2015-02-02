@@ -5,7 +5,7 @@
   * Most exposed attack vector sql injection  must be mitigated.  
   * 
 
-### Postgesql  
+### Postgresql  
 
   * \d [arg]; => describes the arg table, no arg describes all tables  
   * SELECT * FROM table; => shows columns and rows from table.  
