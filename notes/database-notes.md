@@ -18,3 +18,11 @@
     * consistency: ensures that the db properly changes states upon a successfully conmmitted transaction.  
     * isolation: enables transactions to operate independently of and transparent to each other.  
     * durability: ensures that the result or effect of a committed transaction persists in case of a system failure.  
+
+### [Bookshelf.js](http://bookshelfjs.org/) & [Knex.js](http://bookshelfjs.org/)  
+  * ORM (object relational mapping)  
+  * connection object in the knexfile.js  
+  * bookshelf models are simple objects representing individual db rows, specifying the tablename and any relations to other models. They can be extended with any domain-specific methods, which dan handle components such as validations, computed properties, and access control.  
+  * bookshelf extend => bookshelf.Model.extend([protoProps], [classProperties])  to create a Modle class of your own, you extend bookshelf.Model and proivde instance properties, as well as optional classProperties to be attached diretly to constructor functions.  
+  * extend correctly sets up the prototype chain, so subclasses created with extend can be further extended and subclassed as far as you like.  
+  
