@@ -20,6 +20,11 @@
   * accessing inherited properties on obj:  
   * obj serializing and deserializing:
 * Functions:  
+  * invocation: 4 types:
+    * as a function: straight forward manner.  func();  
+    * as a method: which ties the method to an obj (enabling OOP) obj.func();  
+    * as a constructor in which a new obj is brought into being var fn = new func(){// code };  
+    * with its apply() or call() methods (explained below)  
   * implicit paramaters:  all function invocations are silently passed 2 implicit paramaters: arguments and this. arguments is a collection & this => parameter refers to an object that’s implicitly associated with the function invocation and is termed the function context.
   * apply & bind:
   * curry: 
