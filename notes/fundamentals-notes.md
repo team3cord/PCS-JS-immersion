@@ -34,12 +34,14 @@
   * this: 
   * recursion:  
   * singleton:  
+  * constructors vs factories:  [eric elliot](http://ericleads.com/2013/01/javascript-constructor-functions-vs-factory-functions/)???   
 * Arrays vs Collections: 
 * Objects & Prototypes:  
 * Concurrency: 
 * Event Loop:  
 * Syntax:  
 * Inheritance: 
+* Memory leak:
 * Gotchas:  
 * ES6:
 * Classifiying tools: gulp grunt express node ect.  
