@@ -10,7 +10,8 @@
   * createdb name;  then psql name: go to connect to db.  
   * \d [arg]; => describes the arg table, no arg describes all tables  
   * SELECT * FROM table; => shows columns and rows from table.  
-  *   
+  * database dump utility => pg_dump  databasename >> ~/Desktop/filename.sql  
+  * database import => psql database  then \i path to filename.sql  works better than psql database < pathe to filename.sql  
   
   * [Transactions:](http://www.tutorialspoint.com/postgresql/postgresql_transactions.htm)  
     * propigation of one or more changes to the database. For example, creating or updating a record or deleting a record from the table. It is important to control transactions to ensure data integrity and to handle database errors.  
