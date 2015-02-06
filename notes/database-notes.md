@@ -31,3 +31,9 @@
   * connection to the db through app.js  
   * post to the db through routes/index.js router.post  
   * 
+
+### knex.js  
+
+  * in index.js create a knex require in router.post function create a knex transaction.  Important to make sure defaults are set in db scheme to handle timestamp.
+  * Error handling in post function???  
+  *  
