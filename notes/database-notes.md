@@ -1,4 +1,4 @@
-# Database notes  
+# Database notes    
 
   * Primary Key is a unique integer that is serialized and can only be used for one entry.  
   * Foreign Key is a column or columns that references a column of another table(most often primary key)  
@@ -26,3 +26,8 @@
   * bookshelf extend => bookshelf.Model.extend([protoProps], [classProperties])  to create a Modle class of your own, you extend bookshelf.Model and proivde instance properties, as well as optional classProperties to be attached diretly to constructor functions.  
   * extend correctly sets up the prototype chain, so subclasses created with extend can be further extended and subclassed as far as you like.  
   
+### express db connection  
+
+  * connection to the db through app.js  
+  * post to the db through routes/index.js router.post  
+  * 
