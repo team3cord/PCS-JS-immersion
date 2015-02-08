@@ -38,3 +38,8 @@
   7. npm install --save jasmine (adds jasmine as a dependency in your packacge.json)  
   8. write tests in new_spec.js => require index.js => module.export to your new_spec.js file    
   9. to run tests in newDirectory 'npm test'  
+
+### git notes  
+  * in a repo where you are a contributor github only rewards master branch commits.  
+  * ?  
+
