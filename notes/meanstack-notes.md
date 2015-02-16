@@ -37,4 +37,11 @@
   * Non-blocking asyncronous model  (single thread)  
   * npm package manager   
 
-  
+---  
+
+## Seeds & Generators  
+
+  * [mean.js](http://meanjs.org/)  
+  * [mean io](http://mean.io)  
+  * [grunt](http://gruntjs.com)
+  * [gulp](http://gulpjs.com/)  
