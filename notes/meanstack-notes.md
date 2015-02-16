@@ -15,6 +15,21 @@
   * Map/Reduce & Aggregation  
   * Scale & Availability  
 
+### Express.js  
+  
+  * framework for node.js
+  * http server  
+  * routes  
+  * middleware  
+
+### Angular.js  
+
+  * client-side MVC framework  
+  * separation of concerns  
+  * declarative UI bindings  
+  * embeddable => don't need to use angular on the whole app unless you want to 
+  * testable => injectable dependence which allow testing   
+
 ### Node.js  
 
   * JavaScript on the server  
