@@ -1,9 +1,13 @@
 # MEAN stack  
 
+---  
+
   * [MongoDB](http://www.mongodb.org/)  
   * [Express.js](http://expressjs.com/)  
   * [Angular.js](https://angularjs.org/)  
   * [Node.js](http://nodejs.org/)  
+
+---  
 
 ### MongoDB  
   
