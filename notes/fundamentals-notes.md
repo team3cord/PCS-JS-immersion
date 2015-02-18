@@ -30,6 +30,7 @@
   * curry: 
   * callbacks:
   * tailcalls: 
+  * try catch:  
   * event handlers:
   * this: 
   * recursion:  
