@@ -8,4 +8,6 @@
   * load events module which comes baked into node (require('events'))  
   * 
  
- 
+---   
+
+* error handling and callbacks???  
