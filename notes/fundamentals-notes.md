@@ -46,3 +46,5 @@
 * Gotchas:  
 * ES6:
 * Classifiying tools: gulp grunt express node ect.  
+* deep copying an obj in JS => var clone_of_a = JSON.parse( JSON.stringify( a ) ); if there is no functions in the obj  
+
