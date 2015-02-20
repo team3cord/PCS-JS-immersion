@@ -25,7 +25,19 @@
 ### solve function  
 
   * keeps track of the check count  (iteration if change)  
-  * narrowPossibilites()  first pass  
-  * 
+  * check if squares array has 81 know = true (puzzel solved)  
+  * run through the functions to check for duplication in possible arrays  
+  * if possible array has only one value change known to true.  increment check count  
+  * once it has exausted the possiblities functions  create a clone of the squares obj  
+  * create a clone of the check count  
+  * using the cloned objs break off into a guessing function  
+  * check for breaking the board  
+  * if broken reset to fresh clone to start guessing again with the next index  
+  * get first square out of the squares clone that is unknow  
+  * change to know and set possible[0] to possible  
+  * recursively run solve function with guess  
+  * if it breaks the puzzle retry guessing function  
+
+  
 
     
