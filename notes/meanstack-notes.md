@@ -49,3 +49,10 @@
   * [mean io](http://mean.io)  
   * [grunt](http://gruntjs.com)
   * [gulp](http://gulpjs.com/)  
+
+### ToDo  
+
+  * create a angular.js / express.js app with gulp || grunt  to work on through the angular week.
+  * only use TDD from here out   
+  * attempt a webkit native app for ubuntu and OSX  
+  * 
