@@ -21,11 +21,36 @@
     * angular then compiles the DOM starting at the ngApp root element => processing any directives & bindings found along the way    
   * once the app is bootstrapped it waits for incoming browser events that might change the model  
   * when events are detected angular reflects them in the view by updating all the affected bindings  
-  * templates  
-    * in angular, the view is a projection of the model through the HTML template  => whenever the model changes angular refreshes the binding points, which updates the view  
-    * ng-app='phonecatApp' is the name of the module referencing the controller located in the controllers.js  
-    * ng-repeat='phone in phones' is a directive that loops through the $scope.phones array => phone is the template databinding to output the application model value  
-    * 
+ 
+---  
+
+###  view & templates  
+
+  * in angular, the view is a projection of the model through the HTML template  => whenever the model changes angular refreshes the binding points, which updates the view  
+  * ng-app='phonecatApp' is the name of the module referencing the controller located in the controllers.js  
+  * the phonecatApp module contains PhoneListCtrl where the $scope.phones array is declared  
+  * ng-repeat='phone in phones' is a directive that loops through the $scope.phones array => phone is the template databinding to output the application model value  
+  *  the current scope inheritance Root scope => ng-app='phonecatApp' => ng-controller='PhoneListCtrl' => repeater scope ng-repeat='phone in phones'  
+
+---  
+
+### model & controller  
+  * the data model (simple array) is now instantiated within PhonesListCtrl  
+  * the controller is simply a function that takes a $scope parameter  
+  * the controller provides a context for the data model & establishes data-binding between the model & view  
+  * $scope is a prototypical descendant of the root scope created when the app was defined & is available to all bindings located within ng-controller='PhoneListCtrl'  
+
+---  
+
+### scope  
+  * angular uses scopes, along with the info contained in the template, data model, and controller to keep models & views separate, but in sync
+  * any changes made to the model are reflected in the view  
+  * any changes that occur in the view are reflected in the model  
+
+---  
+
+### tests      
+  * 
 
   
 
