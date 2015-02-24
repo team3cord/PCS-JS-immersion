@@ -21,7 +21,9 @@
     * angular then compiles the DOM starting at the ngApp root element => processing any directives & bindings found along the way    
   * once the app is bootstrapped it waits for incoming browser events that might change the model  
   * when events are detected angular reflects them in the view by updating all the affected bindings  
- 
+  * $scope is an angular [service](https://docs.angularjs.org/guide/services)  
+  *  
+
 ---  
 
 ###  view & templates  
