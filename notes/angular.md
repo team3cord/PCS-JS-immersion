@@ -6,6 +6,16 @@
 *  
 
 ---  
+##  core concepts  
+
+  * two-way data binding => any changes to the view are immediately reflected in the model & an changes to the model are propogated to the view  
+  * dependency injection => sub system incharge of creating components, resolving their dependencies & providing them to other components as requested  
+  * controllers => attached to the DOM 'ng-controller' incapsulates angular $scope  & method for adding or responding to behavior in the controller scope  
+  * expressions => are JS like code snipets placed in bindings {{ example }}  
+  * services => Angular services are substitutable objects that are wired together using dependency injection (DI). You can use services to organize and share code across your app  
+  * scopes => obj that  refers to the app model. execution context for expressions  arranged in hierarchy mimicing the DOM structure of the app  scopes can watch expressions & propagate events  
+  * 
+---  
 
 ## syntax & conventions  
 
