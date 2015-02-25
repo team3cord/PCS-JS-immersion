@@ -1,4 +1,5 @@
 # Angular.js  notes  
+  * $scope is an angular [service](https://docs.angularjs.org/guide/services)  
 
 * [angular.js](https://angularjs.org/)  
 * [angular seed project](https://github.com/angular/angular-seed)  // dir structure  
