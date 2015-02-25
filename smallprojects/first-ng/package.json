@@ -1,0 +1,16 @@
+{
+  "name": "first-ng",
+  "version": "0.0.1",
+  "description": "sample angular.js app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "Angular.js",
+    "Node.js"
+  ],
+  "author": "Matt C",
+  "license": "ISC"
+}
