@@ -9,11 +9,12 @@
 ##  core concepts  
 
   * two-way data binding => any changes to the view are immediately reflected in the model & an changes to the model are propogated to the view  
-  * dependency injection => sub system incharge of creating components, resolving their dependencies & providing them to other components as requested  
+  * dependency injection => sub system incharge of creating components, resolving their dependencies & providing them to other components as requested    * passing an object to a function helps with modularity  
   * controllers => attached to the DOM 'ng-controller' incapsulates angular $scope  & method for adding or responding to behavior in the controller scope  
   * expressions => are JS like code snipets placed in bindings {{ example }}  
   * services => Angular services are substitutable objects that are wired together using dependency injection (DI). You can use services to organize and share code across your app  
-  * scopes => obj that  refers to the app model. execution context for expressions  arranged in hierarchy mimicing the DOM structure of the app  scopes can watch expressions & propagate events  
+  * scopes => obj that  refers to the app model. execution context for expressions  arranged in hierarchy mimicing the DOM structure of the app  scopes can watch expressions & propagate events 
+    * $scope is the convention for adding properties & methods to the controller & tying it to the view  
   * 
 ---  
 
@@ -31,8 +32,9 @@
     * angular then compiles the DOM starting at the ngApp root element => processing any directives & bindings found along the way    
   * once the app is bootstrapped it waits for incoming browser events that might change the model  
   * when events are detected angular reflects them in the view by updating all the affected bindings  
-  * $scope is an angular [service](https://docs.angularjs.org/guide/services)  
-  *  
+  *  the controller syntax myController.controller('MyController', ['$scope','MyThing', function($scope, MyThing){$scope.MyThing = 'ThingMy'}]); is so that when the js file is minified it does not break the angular dependency injection => angular uses the $scope(services) keyword and minification changes all variables to the smallest possible string  
+  * the controller syntax relies on order in the array  it reasigns the function vars based on the order of the elements of the array b4 the function  
+  * 
 
 ---  
 
@@ -51,6 +53,7 @@
   * the controller is simply a function that takes a $scope parameter  
   * the controller provides a context for the data model & establishes data-binding between the model & view  
   * $scope is a prototypical descendant of the root scope created when the app was defined & is available to all bindings located within ng-controller='PhoneListCtrl'  
+
 
 ---  
 
