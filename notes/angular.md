@@ -35,6 +35,7 @@
   * when events are detected angular reflects them in the view by updating all the affected bindings  
   *  the controller syntax myController.controller('MyController', ['$scope','MyThing', function($scope, MyThing){$scope.MyThing = 'ThingMy'}]); is so that when the js file is minified it does not break the angular dependency injection => angular uses the $scope(services) keyword and minification changes all variables to the smallest possible string  
   * the controller syntax relies on order in the array  it reasigns the function vars based on the order of the elements of the array b4 the function  
+  * after submiting a form you must $scope.formName = null to clear the input form  
   * 
 
 ---  
