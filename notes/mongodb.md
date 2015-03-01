@@ -9,7 +9,8 @@
   * Mongoose ODM 
 
 ---  
-
+  * to start the mongo instance => sudo mongod (to start daemon)  
+  * in project dir => mongo  (to start/connect to server)  
   * create server.js file in node directory  
   * using mongoose create post model in dir model file post.js  
   * module export both  
