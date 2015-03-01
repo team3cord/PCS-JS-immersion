@@ -47,6 +47,11 @@
 
 ---  
 
+## End Points   
+  * create the server side API with 2 endpoints   
+  * GET endpoint  => return JSON array of all the data   
+  * POST endpoint = espects a JSON doc containing data (username, body)   
+
 ## Seeds & Generators  
 
   * [mean.js](http://meanjs.org/)  
