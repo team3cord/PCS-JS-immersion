@@ -11,6 +11,11 @@ Write modern web apps w MEAN stack => Jeff Dickey
 ## Dependencies  
 
 ## Node API  
+  
+  * create endpoint in server.js for / (res.sendFile())  
+  * create endpoint in post controller for addPost() with $http service => $scope.addPost  * $http.get should not be inside addPost() function  
+  * 
+
 
 ## Automation (Gulp.js)  
 
