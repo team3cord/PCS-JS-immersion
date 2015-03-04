@@ -5,6 +5,7 @@
 * First class citizens: functions are first class citizens and can be used like any other obj, passing as arg to another function, returning them as values from other functions, assigning them to variables and or storing them in data structures.  
 * Variable hoisitng: 
 * Higher-order functions:  
+* Getters & Setters:  
 * Closures:  
 * block scope vs function scope:  
 * IIFE:  
