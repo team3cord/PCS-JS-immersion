@@ -28,7 +28,7 @@
   *  
 
 ---      
-
+* CAP theorem ??  CP / AP  
 * schema for SQL vs no schema for NoSQL  =>  reasons to choose each  
 * scale issues for both types of DBs  
 * which apps use which types of DBs  
