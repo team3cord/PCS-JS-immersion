@@ -45,6 +45,10 @@ Write modern web apps w MEAN stack => Jeff Dickey
 
 ## Automation (Gulp.js)  
 
+  * Gulp is stream based => config in JS & more compact  => increased speed  
+  * load files with gulp.src into a stream them | them through various plugins => output them w/ gulp.dest  
+  * 
+
 ## Authentication  
 
 ## Routing & Client Authentication  
