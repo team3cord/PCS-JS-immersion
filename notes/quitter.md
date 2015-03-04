@@ -40,6 +40,7 @@ Write modern web apps w MEAN stack => Jeff Dickey
 
   * add static asset in controllers/static => use express router obj => add static js file in html w/ reg src=app.js  
   * break out the $http service into a PostsSvc then dependency inject $http  => define a func on the service called fetch that returns the $http promise for loading posts => dependency inject PostsSvc into the controller  
+  * the PostsSvc create function needs to have the post passed to it and returned with the url  
   * 
 
 ## Automation (Gulp.js)  
