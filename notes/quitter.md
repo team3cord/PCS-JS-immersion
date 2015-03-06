@@ -30,7 +30,11 @@ Write modern web apps w MEAN stack => Jeff Dickey
     * logger setup  
     * error handling  
     * mounting controllers  
-  * 
+  * gulp-uglify  
+    * 'Unknown provider' is an error that the dependency injector couldn't find a dependency => angular is incompatable w/ JS minifiers  
+    * .service('PostsSvc', function($http)) needs to be changed to .service('PostsSve', [$http, function($http){}]) => this is the correct way to declare dependecies & minify JS  
+    * gulp-ng-annotate allows you to write consise code but minify as well  
+
 
 ---  
 
