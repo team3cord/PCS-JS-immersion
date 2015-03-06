@@ -7,6 +7,8 @@
     * no scheme needed  
     *  
   * Mongoose ODM 
+  * config issues running mongo daemon with launchclt  
+  * 
 
 ---  
   * to start the mongo instance => sudo mongod (to start daemon)  
