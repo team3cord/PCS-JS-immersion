@@ -6,6 +6,14 @@ Write modern web apps w MEAN stack => Jeff Dickey
 
 ---
 
+  * the order in which you declare component doesn't matter however you do need to access the nodule object you create with angular.module('appname', [])  
+  * angular.module() is a method that can be used as either a getter || setter  
+  * if you  call angular.module('nameofmod') it will return that modules getter  
+  * if you call angular.module('nameofmod', [dependencies]) it is a setter => the setter can be called only once and must be called before any getters  
+
+---  
+
+
 ## Structure  
 
 ## Dependencies  
