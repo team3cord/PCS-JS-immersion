@@ -35,7 +35,10 @@ Write modern web apps w MEAN stack => Jeff Dickey
     * .service('PostsSvc', function($http)) needs to be changed to .service('PostsSve', [$http, function($http){}]) => this is the correct way to declare dependecies & minify JS  
     * gulp-ng-annotate allows you to write consise code but minify as well  
   * gulp.watch to track changes in js files => uglify & concat  
-  * 
+  * gulp => css||sass => livereload [nitrous.io] (http://help.nitrous.io/setting-up-gulp-with-livereload-and-sass/)  
+  * gulp nodemon  => gulp.task dev:server  
+  *  
+
 
 ---  
 
