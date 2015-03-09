@@ -48,8 +48,14 @@ Write modern web apps w MEAN stack => Jeff Dickey
   * gulp nodemon  => gulp.task dev:server  
   * run gulp dev:server to boot app  
   * to limit the reboots add an ignore line in the task function  
-  *   
-
+  * other potential gulp plugins:  
+    * jshint  
+    * rev => appends the hash of contents of a file to the filename => aggresive caching  
+    * autoprefixer => vendor prefixes to css  
+    * rimraf => sanitises dirs to get a fresh build  
+    * imagemin => compresses images  
+    * livereload  => browser refresh on save  
+  *  
 
 ---  
 
