@@ -4,6 +4,14 @@
 
 Write modern web apps w MEAN stack => Jeff Dickey  
 
+  * directory structure best practices???  
+  * [meanstack.co](http://www.meanstack.co/angularjs-best-practices-directory-structure/)  
+  * [john papa](https://github.com/johnpapa/angular-styleguide)  
+  * [mean.js](http://meanjs.org/docs.html#folder-structure)  
+  * [mean.io](http://learn.mean.io/#mean-stack-packages-files-structure)  
+  * where is the best resource for dir structure????   
+
+
 ---
 
   * the order in which you declare component doesn't matter however you do need to access the nodule object you create with angular.module('appname', [])  
