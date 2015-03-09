@@ -84,6 +84,9 @@ Write modern web apps w MEAN stack => Jeff Dickey
 
 ## Authentication  
 
+  * cookie based vs token based  
+    * 
+
 ## Routing & Client Authentication  
 
 ## Websockets (push notifications)  
