@@ -44,8 +44,11 @@ Write modern web apps w MEAN stack => Jeff Dickey
     * gulp-ng-annotate allows you to write consise code but minify as well  
   * gulp.watch to track changes in js files => uglify & concat  
   * gulp => css||sass => livereload [nitrous.io] (http://help.nitrous.io/setting-up-gulp-with-livereload-and-sass/)  
+  * after adding css watch and concat update dev ignore  
   * gulp nodemon  => gulp.task dev:server  
-  *  
+  * run gulp dev:server to boot app  
+  * to limit the reboots add an ignore line in the task function  
+  *   
 
 
 ---  
