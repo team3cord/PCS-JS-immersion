@@ -99,4 +99,10 @@ Write modern web apps w MEAN stack => Jeff Dickey
 
 ## Deployment  
 
+## Customization  
+
+  * adding bower/sass/fontawesome [ericbarnes.com](http://ericlbarnes.com/setting-gulp-bower-bootstrap-sass-fontawesome/)  => add fontawesome task  => sort out bootstrap || remove  
+  * gulp file added in css task un-tested => confirm syntax & err handling w/ notify  
+  * 
+
 
