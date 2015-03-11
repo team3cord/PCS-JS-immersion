@@ -65,3 +65,49 @@
   * only use TDD from here out   
   * attempt a webkit native app for ubuntu and OSX  
   * 
+
+---   
+
+ * which type of apps work best with a nosql db???  
+ * express middleware helps parse respones and api handling & sits on top of node.js  
+ * websockets ??  
+ * npm server side package manager && bower is the client side package manger && grunt || gulp for task running/build tools  
+ *  
+
+---  
+
+### What is the best dir structure  
+
+app --
+--- assets
+--- --- css  
+--- --- img  
+--- --- js  
+--- config  
+--- --- env => all/dev/prod/test
+--- --- config.js  
+--- --- express.js  
+--- --- routes.js  
+--- server  
+--- --- controlers => articles/posts.js && index.js  
+--- ---  models  => article.js  
+--- views 
+--- --- articles => create/edit/list/view   
+--- --- includes => header/footer  
+--- --- layouts  => default articles SPA??   
+--- --- pages => admin/apps/home/about???  
+--- --- templates => navbar?? !includes??  
+
+--- --- 404/500/ index.jade??? 
+bowerre
+gitignore
+README.md  
+bower.json  
+gruntfile/gulpfile.js  
+package.json  
+server.js  
+
+---   
+
+
+
