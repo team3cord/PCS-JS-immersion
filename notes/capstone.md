@@ -15,5 +15,6 @@ Matt
 * express db.js in app/models => connects to MongoDB instance  
 * express post.js in app/models => requires db.js & creates the db schema  
 * express posts.js in app/controllers => requires post.js => creates a new instance of router => creates router.get & router.post => exports router  
-* ng index.html => 
+* ng index.html => list.ctrl.js  A
+
 
