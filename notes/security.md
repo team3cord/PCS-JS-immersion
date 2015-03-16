@@ -7,7 +7,8 @@
     * ciphertext => reversable  
     * hash => practically impossible to reverse  
     * password salting  => used with hashing, must be unique for each user, makes breaking a computationally infeasible task (rainbow table)  
-  *  
+    * validating users sychronous (validating while everything else is blocked) handles around 4 times less requests each one about three times slower  
+
 
 ---  
 

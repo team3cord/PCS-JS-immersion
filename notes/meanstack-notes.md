@@ -25,6 +25,7 @@
   * http server  
   * routes  
   * middleware  
+  * use bcrypt to salt & hash pw data  
 
 ### Angular.js  
 

@@ -17,4 +17,7 @@ Matt
 * express posts.js in app/controllers => requires post.js => creates a new instance of router => creates router.get & router.post => exports router  
 * ng index.html => list.ctrl.js  A
 
+---  
 
+* using bcrypt to hash & salt users pw => use asynchronous (4x as many requests/ 3x faster per)  
+* 
