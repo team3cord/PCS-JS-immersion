@@ -23,6 +23,10 @@ Write modern web apps w MEAN stack => Jeff Dickey
 
 
 ## Structure  
+  
+  * all express/mongodb functionality handled in the app/controllers&models&views  
+  * all angular functionality handled in the public/js/ng&controllers&directives&filters&services  
+  * all static content (imgs/css/template) handled in the public folder  
 
 ## Dependencies  
 
@@ -80,14 +84,17 @@ Write modern web apps w MEAN stack => Jeff Dickey
 
   * Gulp is stream based => config in JS & more compact  => increased speed  
   * load files with gulp.src into a stream them | them through various plugins => output them w/ gulp.dest  
-  *  
+  * default task to watch all tasks  (concat/min/livereload/nodeserver/ect)   
 
 ## Authentication  
 
   * cookie based vs token based  
-    * 
+    * token with bcrypt & jwt  handled at session & user endpoints  
 
 ## Routing & Client Authentication  
+ 
+  * ng module dependency on 'ngRoutes'  
+  * handled in public/js/ng/routes => routes configured to controllers & template partials  
 
 ## Websockets (push notifications)  
 
