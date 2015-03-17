@@ -22,3 +22,27 @@
   * errors are handled with the if (err) where the callback returns the data  
   * in Express the next(err) returns the error with a 500 status code  
   * 
+
+---  
+
+## Commands  
+
+  * mongo => connect to mongod  
+  * mongo dbname => connect to dbname  
+  * db => show current db  
+  * show dbs => list dbs  
+  * use dbname => connect to dbname  
+  * show collections => list collections  
+  * db.collectionname.find() => returns items in collectionname  
+
+---    
+
+
+
+
+
+
+
+
+
+
