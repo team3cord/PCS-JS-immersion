@@ -19,4 +19,11 @@
   * information to pass: {userid:2, admin: true}
 3 signature  
 
+---  
 
+### Session storage  
+
+* ng user.svc.js =>  $window.localStorage.setItem('access_token',response.data); on the login  
+* saves to local storage  
+* check local storage when the app starts login current user???  
+* 
