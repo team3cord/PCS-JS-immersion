@@ -22,4 +22,9 @@ Matt
 * using bcrypt to hash & salt users pw => use asynchronous (4x as many requests/ 3x faster per)  
 * ng module dependency injects 'ngRoute' => configures routes (routes.js) connects to controllers & template partials  
 * app.ctrl login.ctrl register.ctrl user.svc => manage login/reg process connecting to the user/sessions/server-aut endpoints in app/controllers  
+* using jwt (jot) & $window.localStorage => save session token  
+* need to check at app start for jwt in localstorage & login user is present  
+*   
+
+
 
