@@ -27,4 +27,19 @@ Matt
 *   
 
 
+---  
+
+### Tech advisor notes 3.19.15  
+
+1) node_modules and bower_components should be committed to the repo. http://addyosmani.com/blog/checking-in-front-end-dependencies/
+2) Rewrite this line https://github.com/apinfodesign/fullpixel/blob/master/app/controllers/routes.js#L9 to something like this: http://stackoverflow.com/a/25463996/3732163
+3) I’d like to see the ‘ng’ folder separated from the public/js folder since it’s their source code. And public/js could be ignored with gitignore.
+4) No need to assign the application to a global variable. https://github.com/apinfodesign/fullpixel/blob/master/public/js/ng/controllers/module.js#L1
+5) Not using controllerAs syntax https://github.com/apinfodesign/fullpixel/blob/master/public/js/ng/controllers/register.ctrl.js#L2
+6) UserSvc should handle this logic https://github.com/apinfodesign/fullpixel/blob/master/public/js/ng/controllers/register.ctrl.js#L4-L8
+7) UserSvc should store the current logged user so other controllers don’t need to listen for the ‘login’ event.
+8) Some services are mixed in with controllers directory.
+9) Hardcoded URL: https://github.com/apinfodesign/fullpixel/blob/master/public/js/ng/controllers/list.svc.js#L7
+
+That’s all I have for now. I tried running the application. It seems as though images are being uploaded but the file names do not change no matter how many times you upload the same image. They’ll want to look at that. I couldn’t register or log in.
 
