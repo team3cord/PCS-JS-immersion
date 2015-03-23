@@ -26,6 +26,15 @@ Matt
 * need to check at app start for jwt in localstorage & login user is present  
 *   
 
+---  
+
+* find out about controller as syntax  
+* fix/check login   
+* create logout functionality  
+* update session functionality tokens &|| cookies  
+* clean up dir structure    
+* ?  
+
 
 ---  
 
