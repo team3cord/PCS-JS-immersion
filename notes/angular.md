@@ -37,6 +37,15 @@
   * the controller syntax relies on order in the array  it reasigns the function vars based on the order of the elements of the array b4 the function  
   * after submiting a form you must $scope.formName = null to clear the input form  
   * 
+---   
+
+  1. binding => the connection in your html of attributes that connect to your angular controllers/models/ect.  
+  2. services => angular singletons that can be passed around to controllers ensuring that you are dealing with the same object each time => they can have various controllers & directives affect its values => allows data to be shred between controllers  
+  3. controllers => used to wire up services, dependencies, and other objects to the view (via scope) & also can handle complex logic in your view  
+  4. directives => for working with & modifying the DOM  (ie: mouseenter::mouseleave)  
+  5. filters => custom || built in filters => formats the value of an expression in the view templates,controllers or services 
+
+
 
 ---  
 
@@ -73,9 +82,10 @@
 
 
 ---  
-
+### 
 ## resources  
-
+  * [youtube John Lindquist](https://www.youtube.com/watch?v=Lx7ycjC8qjE&list=PLP6DbQBkn9ymGQh2qpk9ImLHdSH5T7yw7)  
+  * [when to use dir,cont,ser in ng Kirk Bushell](http://kirkbushell.me/when-to-use-directives-controllers-or-services-in-angular/)  
   * [egghead.io](https://egghead/technologies/angularjs)  
   * [stackoverflow list](http://stackoverflow.com/questions/14333857/how-to-master-angularjs)  
 
