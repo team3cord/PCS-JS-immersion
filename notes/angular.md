@@ -7,6 +7,19 @@
 *  
 
 ---  
+
+* digest loop => 
+* ngCloak => hides templates while angular loads => prevents template {{attr}} flash => have to add css related to it  
+* Service Types  => services are by definition are singletons => injected modules of data || functionality  
+  * constatnts => cannot be modified by a decorators  
+  * values  => can be modified by a decorator  
+  * factories => has to return something => common use case return bundled functionality => closure to encapsulate data => when injected uses obj != new obj() => most common service   
+  * services => declares a new service class => new service() => coffescript is common use case   
+  * providers => same as factory except it returns a $get : function() => allows for configuration of service => app.config(nameProvider)   
+  * decorators => not a formal service => a way of modifying a service after the fact => only the public facing methods  
+
+---    
+
 ##  core concepts  
 
   * two-way data binding => any changes to the view are immediately reflected in the model & an changes to the model are propogated to the view  
