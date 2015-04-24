@@ -90,7 +90,13 @@
 
 ### tests      
   * 
+---  
 
+### directives  
+
+  * built in & custom  => 
+  * custom return obj => restrict A(attribute), E (element),C (class) => templateUrl: path to template or function w/ 2 params (el, attr) => isolating scope key pair namespaceKey: '=value' binds to controllers scope => the value is an attr in the HTML  
+  * custom that manupulates the DOM => 
   
 
 
