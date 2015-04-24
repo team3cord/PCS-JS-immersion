@@ -94,9 +94,10 @@
 
 ### directives  
 
-  * built in & custom  => 
+  * built in & custom  => the function arg is dep injected to use inside a directive  
   * custom return obj => restrict A(attribute), E (element),C (class) => templateUrl: path to template or function w/ 2 params (el, attr) => isolating scope key pair namespaceKey: '=value' binds to controllers scope => the value is an attr in the HTML  
-  * custom that manupulates the DOM => 
+  * custom that manupulates the DOM => The link function takes 3 args (scope, element, attrs) scope => angular scope obj, element => jqLite wrapped element of the directive, attrs => hash obj with key value pairs & corresponding attr values  
+  * custom that wraps other elements => 
   
 
 
