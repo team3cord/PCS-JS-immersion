@@ -1,5 +1,18 @@
 # JS fundamentals notes  
 
+---  
+
+* built in types:  
+  * null  => special (buggy) with typeof operator  
+  * undefined  => typeof undefined     === "undefined"; // true  
+  * boolean    => typeof true          === "boolean";   // true  
+  * number     => typeof 42            === "number";    // true  
+  * string     => typeof "42"          === "number";    // true  
+  * object     => typeof { life: 42 }  === "object";    // true    
+  * symbol     => typeof Symbol()      === "symbol";    // true NEW IN ES6 ###  
+
+---  
+
 * Lexical scope: is the model based on where variables and blocks of scope are defined by author-time decisions. The lexing phase(tokenizing) of the compiler is essentially able to know where and how all identifiers are declared, and predict how they will be looked-up during execution.  
     * 2 mechanisms can "cheat" lexical scope: eval() and with by creating or modifying scope at runtime. Therefore should be avoided.  
 * First class citizens: functions are first class citizens and can be used like any other obj, passing as arg to another function, returning them as values from other functions, assigning them to variables and or storing them in data structures.  
