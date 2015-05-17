@@ -13,6 +13,15 @@
 
 ---  
 
+* [5 QUESTIONS ](https://medium.com/humans-create-software/how-do-you-judge-a-javascript-programmer-by-only-5-questions-f2abdf7dfd4a)  
+  1. Explain the difference between "call" & "apply"?  
+  2. Explain "map"?  
+  3. Explain "bind"?  
+  4. Explain how "colsures" work? general programming & JS  
+  5. Explain JS preformance problem & a solution?  
+
+---   
+
 * Lexical scope: is the model based on where variables and blocks of scope are defined by author-time decisions. The lexing phase(tokenizing) of the compiler is essentially able to know where and how all identifiers are declared, and predict how they will be looked-up during execution.  
     * 2 mechanisms can "cheat" lexical scope: eval() and with by creating or modifying scope at runtime. Therefore should be avoided.  
 * First class citizens: functions are first class citizens and can be used like any other obj, passing as arg to another function, returning them as values from other functions, assigning them to variables and or storing them in data structures.  
